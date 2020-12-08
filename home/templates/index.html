@@ -1,0 +1,183 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+
+<br> <br> <br> <br> <br> <br>
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+        <li data-target="#demo" data-slide-to="3"></li>
+    </ul>
+
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{% static 'img/slider-music-2.PNG' %}" class='slider-image-height-width' alt="Music">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'img/slider-music-3.PNG' %}" class='slider-image-height-width' alt="Music">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'img/slider-music-6.PNG' %}" class='slider-image-height-width' alt="Music">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'img/slider-music-4.PNG' %}" class='slider-image-height-width' alt="Music">
+        </div>
+
+    </div>
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+</div>
+
+
+<section class="message py-5">
+    <div class="container-fluid text-center">
+        <h1 class='text-center'> About Us </h1>
+        <h3 class='text-center'>
+            This is user management and music recommendation system. We recommend the music according to the user's preferences. We also manage our users effectively and securely. We have three types of users(Guest, Client, and Admin). Each user have their own permission
+            to access their page according to their type.
+        </h3>
+
+
+        <section class="services">
+            <div class="container text-center py-5">
+                <div class="row">
+
+                    <!-- first col -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fa fa-bar-chart myicon"></i>
+                                <h1> Client </h1>
+                                <p>Each and evey concepts are well explained so you can learn and implement easily.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- second col -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fa fa-bell myicon"></i>
+                                <h1> Guess </h1>
+                                <p>Each and evey concepts are well explained so you can learn and implement easily. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- third col -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fa fa-braille myicon"></i>
+                                <h1> Admin </h1>
+                                <p>Each and evey concepts are well explained so you can learn and implement easily. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <button class="btn btn-primary">More...</button>
+        </div>
+</section>
+
+
+<!-- End of Message Section -->
+
+<!-- Start Services Section  -->
+<section class="services">
+    <div class="container text-center py-5">
+        <h1> About our Services</h1>
+        <div class="row">
+
+            <!-- first col -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fa fa-bar-chart myicon"></i>
+                        <h1>Best Explanation</h1>
+                        <p>Each and evey concepts are well explained so you can learn and implement easily.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- second col -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fa fa-bell myicon"></i>
+                        <h1>Best Explanation</h1>
+                        <p>Each and evey concepts are well explained so you can learn and implement easily. </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- third col -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fa fa-braille myicon"></i>
+                        <h1>Best Explanation</h1>
+                        <p>Each and evey concepts are well explained so you can learn and implement easily. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+<!-- End of services Section -->
+
+
+<!-- Contact -->
+
+<div class="contact">
+    <div class="container">
+        <div class="row">
+
+            <!-- Contact Content -->
+            <div class="col-lg-5">
+                <div class="contact_content">
+                    <div class="contact_title">Get in touch</div>
+                    <div class="contact_text">
+                        <p> Keep in touch with us and then we will able to recommends you your favouite songs and keep your infomation secure. </p>
+                    </div>
+                    <div class="contact_list">
+                        <ul>
+                            <li><span>Address:</span> Kathmandu, Nepal, NP</li>
+                            <li><span>Phone:</span> +977 9840439915 </li>
+                            <li><span>E-mail</span> music@contact.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-lg-6 offset-lg-1 contact_col">
+                <div class="contact_form_container">
+                    <form action="#" class="contact_form" id="contact_form">
+                        <div>
+                            <div class="row">
+                                <div class="col-md-6 contact_input_col"><input type="text" class="contact_input" placeholder="Your Name" required="required"></div>
+                                <div class="col-md-6"><input type="email" class="contact_input" placeholder="Your E-mail" required="required"></div>
+                            </div>
+                        </div>
+                        <div><input type="text" class="contact_input" placeholder="Subject" required="required"></div>
+                        <div><textarea class="contact_input contact_textarea" placeholder="Message" required="required"></textarea>
+                        </div>
+                        <button class="button contact_form_button"><span>send</span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
